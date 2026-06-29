@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+  /*= Base =*/
+  --fondo: #0A1422;
+  --panel: #0C1828;
+  --tarjeta: #0E1C30;
+  --footer: #080F1A;
+
+  /* === Rojo === */
+  --acento: #E11D24;
+  --acento-apagado: rgba(225, 29, 36, 0.85);
+
+  /*= Texto =*/
+  --titular: #FFFFFF;
+  --parrafo: #A9B8C8;
+  --secundario: #8294A8;
+  --footer-texto: #6F8095;
+
+  /*= Borde =*/
+  --borde: rgba(255, 255, 255, 0.08);
+
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
+  --color-fondo: var(--fondo);
+  --color-panel: var(--panel);
+  --color-tarjeta: var(--tarjeta);
+  --color-footer: var(--footer);
+  --color-acento: var(--acento);
+  --color-acento-apagado: var(--acento-apagado);
+  --color-titular: var(--titular);
+  --color-parrafo: var(--parrafo);
+  --color-secundario: var(--secundario);
+  --color-footer-texto: var(--footer-texto);
+  --color-borde: var(--borde);
+
+  /*=Tipografia=*/
+  --font-titulo: var(--font-oswald); 
+  --font-cuerpo: var(--font-barlow); 
+
+}
+/* la pagina web sera oscura por defecto, no necesita el modo oscuro
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
+ */ 
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+ body {
+    background: var(--fondo);
+    color: var(--parrafo);
+    font-family: var(--font-barlow), Arial, Helvetica, sans-serif;
+  }
+
+/* === Mapa de cobertura (Perú) ===
+   #16304d y #0f2740 son tonos propios del mapa (no están en la paleta). */
+.peru-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+}
+.peru-map path {
+  fill: #16304d;
+  stroke: var(--fondo);
+  stroke-width: 0.8;
+  transition: fill 0.2s;
+  cursor: pointer;
+}
+.peru-map path:hover {
+  fill: var(--acento);
+}
+/* Lago Titicaca: agua, no interactivo */
+.peru-map #PE-LKT {
+  fill: #0f2740;
+  stroke: var(--panel);
+  cursor: default;
+  pointer-events: none;
 }
