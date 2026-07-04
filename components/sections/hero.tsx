@@ -74,10 +74,11 @@ import { TruckReveal } from "./truck-reveal";
               Contactar por WhatsApp
             </a>
             <a href={TEL} style={{ display: "inline-flex", alignItems: "center", gap: 9, background: "transparent", color: "var(--titular)", textDecoration: "none", fontWeight: 600, fontSize: 16, letterSpacing: ".06em", textTransform: "uppercase", padding: "16px 30px", borderRadius: 5, border: "1.5px solid rgba(255,255,255,.28)" }}>
-              Llamar 969 195 742
+              Llamar 977 557 275
             </a>
           </div>
 
+            {/*  --COMENTADO POR EL MOMENTO
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 1, background: "var(--borde)", border: "1px solid var(--borde)", borderRadius: 10, overflow: "hidden" }}>
             {STATS.map((st) => (
               <div key={st.l} style={{ background: "var(--fondo)", padding: "26px 24px" }}>
@@ -86,6 +87,7 @@ import { TruckReveal } from "./truck-reveal";
               </div>
             ))}
           </div>
+          */}
 
           <div style={{ marginTop: 20 }}>
             <TruckReveal />

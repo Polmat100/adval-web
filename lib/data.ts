@@ -1,6 +1,10 @@
 // data.ts
-export const WHATSAPP ="https://wa.me/51969195742?text=" + encodeURIComponent("Hola ADVAL, deseo una cotización para mi carga.");
-export const TEL = "tel:+51969195742";
+export const WHATSAPP ="https://wa.me/51977557275?text=" + encodeURIComponent("Hola ADVAL, deseo una cotización para mi carga.");
+export const TEL = "tel:+51977557275";
+
+// FormSubmit: tras activar el correo, reemplazar el email por el alias aleatorio
+// que envía FormSubmit (ej. "https://formsubmit.co/ajax/8f3ka92xb...")
+export const COTIZACION_ENDPOINT = "https://formsubmit.co/ajax/advalgloballogistics@gmail.com";
 
 export interface Carga { n: string; t: string; d: string; }
 export interface Razon { n: string; t: string; d: string; }
@@ -16,7 +20,7 @@ export const STATS: Stat[] = [
 
 
 export const CARGAS: Carga[] = [
-  { n: "01", t: "Contenedores marítimos", d: "Unidades de 20′ y 40′ con twist locks y posición central." },
+  { n: "01", t: "Contenedores marítimos", d: "Unidades de 20′ - 40′ con twist locks y posición central." },
   { n: "02", t: "Bobinas de acero",       d: "Aseguramiento especializado para carga concentrada." },
   { n: "03", t: "Tuberías",               d: "Estiba y amarre para cargas de gran longitud." },
   { n: "04", t: "Estructuras metálicas",  d: "Transporte de piezas y estructuras de obra." },

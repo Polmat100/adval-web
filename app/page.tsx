@@ -5,6 +5,7 @@ import { Empresa } from "@/components/sections/empresa";
 import { Servicios } from "@/components/sections/servicios";
 import { PorQue } from "@/components/sections/porque";
 import { Cobertura } from "@/components/sections/cobertura";
+import { Cotizacion } from "@/components/sections/cotizacion";
 import { Contacto } from "@/components/sections/contacto";
 import { Footer } from "@/components/layout/footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Servicios />
       <PorQue />
       <Cobertura />
+      <Cotizacion />
       <Contacto />
       <Footer logoSrc={LOGO} />
     </div>

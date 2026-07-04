@@ -16,10 +16,10 @@ export const Contacto = () => {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           <a href={WHATSAPP} target="_blank" rel="noreferrer" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: "var(--fondo)", color: "var(--titular)", textDecoration: "none", fontWeight: 600, fontSize: 18, letterSpacing: ".04em", textTransform: "uppercase", padding: "20px 26px", borderRadius: 7 }}>
-            WhatsApp <span style={{ color: "var(--acento)" }}>969 195 742 →</span>
+            WhatsApp <span style={{ color: "var(--acento)" }}>977 557 275  →</span>
           </a>
           <a href={TEL} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: "color-mix(in srgb, var(--fondo) 18%, transparent)", color: "var(--titular)", textDecoration: "none", fontWeight: 600, fontSize: 18, letterSpacing: ".04em", textTransform: "uppercase", padding: "20px 26px", borderRadius: 7, border: "1.5px solid rgba(255,255,255,.5)" }}>
-            Teléfono <span>969 195 742 →</span>
+            Teléfono <span>977 557 275  →</span>
           </a>
           <a href="mailto:advalgloballogistics@gmail.com" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: "color-mix(in srgb, var(--fondo) 18%, transparent)", color: "var(--titular)", textDecoration: "none", fontWeight: 500, fontSize: 15, letterSpacing: ".02em", padding: "18px 26px", borderRadius: 7, border: "1.5px solid rgba(255,255,255,.5)" }}>
             Correo <span>advalgloballogistics@gmail.com</span>
