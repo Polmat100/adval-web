@@ -30,7 +30,19 @@ export default function RootLayout({
       lang="es"
       className={`${oswald.variable} ${barlow.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {/* Activa las animaciones solo si el JS está vivo. El temporizador de
+            seguridad revela todo el contenido si React no llega a hidratar,
+            para que la web nunca se quede "solo con el fondo". */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "document.documentElement.classList.add('js');" +
+              "window.__advalReveal=setTimeout(function(){document.documentElement.classList.remove('js')},3000);",
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

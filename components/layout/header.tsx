@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/ui/reveal";
+
 const NAV = [
     {label: "Empresa", href: "#empresa"},
     { label: "Servicios", href: "#servicios" },
@@ -25,7 +27,9 @@ const NAV = [
             fontFamily: "var(--font-cuerpo), sans-serif",
         }} 
         >
-            <div
+            <Reveal
+            as="div"
+            variant="fade"
             style={{
                 maxWidth: 1280,
                 margin: "0 auto",
@@ -104,7 +108,7 @@ const NAV = [
               Cotizar
             </a>
           </nav>
-        </div>
+        </Reveal>
         </header>
     )
  }

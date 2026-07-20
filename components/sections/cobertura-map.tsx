@@ -2,6 +2,7 @@
 
 import { useState, useCallback, type MouseEvent } from "react";
 import { REGIONS, LAGO_ID, REGION_NAMES } from "@/lib/regions";
+import { Reveal } from "@/components/ui/reveal";
 
 const DEFAULT = "Perú · 25 regiones de cobertura";
 
@@ -38,7 +39,7 @@ export function CoberturaMap({ svg }: { svg: string }) {
     >
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "96px 36px", display: "grid", gridTemplateColumns: "1fr 1.05fr", gap: 64, alignItems: "center" }}>
         {/* Texto + leyenda */}
-        <div>
+        <Reveal as="div" variant="left">
           <div style={{ fontSize: 13, letterSpacing: ".22em", textTransform: "uppercase", color: "var(--acento)", fontWeight: 600, marginBottom: 16 }}>Cobertura</div>
           <h2 style={{ fontFamily: "var(--font-titulo), sans-serif", fontWeight: 600, fontSize: 46, lineHeight: 1.02, textTransform: "uppercase", margin: "0 0 20px", color: "var(--titular)" }}>
             Operamos en todo el Perú
@@ -85,10 +86,10 @@ export function CoberturaMap({ svg }: { svg: string }) {
               );
             })}
           </div>
-        </div>
+        </Reveal>
 
         {/* Mapa */}
-        <div style={{ position: "relative" }}>
+        <Reveal as="div" variant="right" delay={120} style={{ position: "relative" }}>
           <div style={{ position: "absolute", inset: 0, background: "radial-gradient(60% 60% at 60% 35%,rgba(225,29,36,.14),transparent 70%)", pointerEvents: "none", zIndex: 1 }} />
           <div
             className={active ? `peru-map active-${active}` : "peru-map"}
@@ -96,7 +97,7 @@ export function CoberturaMap({ svg }: { svg: string }) {
             onMouseLeave={leave}
             dangerouslySetInnerHTML={{ __html: svg }}
           />
-        </div>
+        </Reveal>
       </div>
 
       {/* Resaltado de la región activa (desde la leyenda) */}

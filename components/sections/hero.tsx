@@ -1,5 +1,6 @@
 import { STATS, WHATSAPP, TEL } from "@/lib/data";
 import { TruckReveal } from "./truck-reveal";
+import { Reveal } from "@/components/ui/reveal";
 
   export function Hero() {
     return (
@@ -44,7 +45,9 @@ import { TruckReveal } from "./truck-reveal";
           }}
         />
         <div style={{ position: "relative", maxWidth: 1280, margin: "0  auto", padding: "96px 36px 84px" }}>
-          <div
+          <Reveal
+            as="div"
+            delay={0}
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -59,24 +62,24 @@ import { TruckReveal } from "./truck-reveal";
             <span style={{ fontSize: 12.5, letterSpacing: ".2em", textTransform: "uppercase", color: "#C9D5E2", fontWeight: 600 }}>
               ADVALURO S.A.C.
             </span>
-          </div>
+          </Reveal>
 
-          <h1 style={{ fontFamily: "var(--font-titulo), sans-serif", fontWeight: 700, fontSize: 84, lineHeight: 0.96, letterSpacing: ".005em", textTransform: "uppercase", margin: "0 0 24px", maxWidth: 980, textWrap: "balance" }}>
+          <Reveal as="h1" delay={90} style={{ fontFamily: "var(--font-titulo), sans-serif", fontWeight: 700, fontSize: 84, lineHeight: 0.96, letterSpacing: ".005em", textTransform: "uppercase", margin: "0 0 24px", maxWidth: 980, textWrap: "balance" }}>
             Movemos carga pesada por <span style={{ color: "var(--acento)" }}>todo el Perú</span>
-          </h1>
+          </Reveal>
 
-          <p style={{ fontSize: 21, lineHeight: 1.5, color: "var(--parrafo)", margin: "0 0 38px", maxWidth: 600 }}>
+          <Reveal as="p" delay={180} style={{ fontSize: 21, lineHeight: 1.5, color: "var(--parrafo)", margin: "0 0 38px", maxWidth: 600 }}>
             Transporte terrestre y soluciones logísticas integrales con flota EURO VI de última generación. Seguridad, eficiencia y compromiso en cada operación.
-          </p>
+          </Reveal>
 
-          <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 64 }}>
+          <Reveal as="div" delay={270} style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 64 }}>
             <a href={WHATSAPP} target="_blank" rel="noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: 9, background: "var(--acento)", color: "var(--titular)", textDecoration: "none", fontWeight: 600, fontSize: 16, letterSpacing: ".06em", textTransform: "uppercase", padding: "16px 30px", borderRadius: 5, boxShadow: "0 14px 36px rgba(225,29,36,.36)" }}>
               Contactar por WhatsApp
             </a>
             <a href={TEL} style={{ display: "inline-flex", alignItems: "center", gap: 9, background: "transparent", color: "var(--titular)", textDecoration: "none", fontWeight: 600, fontSize: 16, letterSpacing: ".06em", textTransform: "uppercase", padding: "16px 30px", borderRadius: 5, border: "1.5px solid rgba(255,255,255,.28)" }}>
               Llamar 977 557 275
             </a>
-          </div>
+          </Reveal>
 
             {/*  --COMENTADO POR EL MOMENTO
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 1, background: "var(--borde)", border: "1px solid var(--borde)", borderRadius: 10, overflow: "hidden" }}>
@@ -89,9 +92,9 @@ import { TruckReveal } from "./truck-reveal";
           </div>
           */}
 
-          <div style={{ marginTop: 20 }}>
+          <Reveal as="div" delay={360} style={{ marginTop: 20 }}>
             <TruckReveal />
-          </div>
+          </Reveal>
         </div>
       </section>
     );

@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/ui/reveal";
+
 interface FooterProps {
     logoSrc: string;
 }
@@ -12,7 +14,9 @@ export const Footer = ({ logoSrc }: FooterProps) => {
             fontFamily: "var(--font-cuerpo), sans-serif",
         }}
         >
-            <div
+            <Reveal
+                as="div"
+                variant="fade"
                 style={{
                     maxWidth: 1280,
                     margin: "0 auto",
@@ -55,7 +59,7 @@ export const Footer = ({ logoSrc }: FooterProps) => {
                 <div style={{ fontSize: 14, color: "var(--footer-texto)", letterSpacing: ".04em" }}>
                     969 195 742 · advalgloballogistics@gmail.com
                 </div>
-            </div>
+            </Reveal>
         </footer>
     )
 }

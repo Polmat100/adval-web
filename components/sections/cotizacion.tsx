@@ -2,6 +2,7 @@
 
 import { useCallback, useState } from "react";
 import { WHATSAPP, COTIZACION_ENDPOINT } from "@/lib/data";
+import { Reveal } from "@/components/ui/reveal";
 
 interface FormField {
   name: string;
@@ -66,7 +67,7 @@ export const Cotizacion = () => {
       id="cotizar"
       style={{ maxWidth: 1280, margin: "0 auto", padding: "96px 36px", fontFamily: "var(--font-cuerpo), sans-serif" }}
     >
-      <div style={{ textAlign: "center", maxWidth: 720, margin: "0 auto 48px" }}>
+      <Reveal as="div" style={{ textAlign: "center", maxWidth: 720, margin: "0 auto 48px" }}>
         <div style={{ fontSize: 13, letterSpacing: ".22em", textTransform: "uppercase", color: "var(--acento)", fontWeight: 600, marginBottom: 16 }}>
           Cotización
         </div>
@@ -77,9 +78,11 @@ export const Cotizacion = () => {
           Completa los campos a continuación y deja que nosotros nos encarguemos del resto. Uno de nuestros expertos
           en transporte de carga en Arequipa, Lima y todo el Perú se pondrá en contacto contigo lo antes posible.
         </p>
-      </div>
+      </Reveal>
 
-      <form
+      <Reveal
+        as="form"
+        delay={120}
         onSubmit={handleSubmit}
         style={{
           background: "var(--tarjeta)",
@@ -147,7 +150,7 @@ export const Cotizacion = () => {
             </a>.
           </p>
         )}
-      </form>
+      </Reveal>
     </section>
   );
 };
