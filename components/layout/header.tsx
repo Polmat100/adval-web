@@ -61,11 +61,11 @@ const NAV = [
                 fontWeight: 600,
                 fontSize: 20,
                 letterSpacing: ".06em",
-                color: "var(--titular)",
+                color: "var(--acento)",
                 textTransform: "uppercase",
               }}
             >
-              ADVAL <span style={{ color: "var(--acento)" }}>GLOBAL</span>
+              ADVAL <span style={{ color: "var(--titular)" }}>GLOBAL</span> LOGISTICS
             </span>
           </a>
 

@@ -29,6 +29,10 @@ export default function RootLayout({
     <html
       lang="es"
       className={`${oswald.variable} ${barlow.variable} h-full antialiased`}
+      // El script inline de abajo añade la clase `js` a <html> durante el
+      // parseo del HTML, antes de que React hidrate. Ese cambio es
+      // intencional, así que le decimos a React que acepte el DOM.
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
         {/* Activa las animaciones solo si el JS está vivo. El temporizador de
