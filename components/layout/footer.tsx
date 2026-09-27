@@ -57,7 +57,7 @@ export const Footer = ({ logoSrc }: FooterProps) => {
                     </div>
                 </div>
                 <div style={{ fontSize: 14, color: "var(--footer-texto)", letterSpacing: ".04em" }}>
-                    969 195 742 · advalgloballogistics@gmail.com
+                    969 195 742 · ventas@advaluro.com
                 </div>
             </Reveal>
         </footer>

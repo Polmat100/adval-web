@@ -22,8 +22,8 @@ export const Contacto = () => {
           <a href={TEL} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: "color-mix(in srgb, var(--fondo) 18%, transparent)", color: "var(--titular)", textDecoration: "none", fontWeight: 600, fontSize: 18, letterSpacing: ".04em", textTransform: "uppercase", padding: "20px 26px", borderRadius: 7, border: "1.5px solid rgba(255,255,255,.5)" }}>
             Teléfono <span>977 557 275  →</span>
           </a>
-          <a href="mailto:advalgloballogistics@gmail.com" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: "color-mix(in srgb, var(--fondo) 18%, transparent)", color: "var(--titular)", textDecoration: "none", fontWeight: 500, fontSize: 15, letterSpacing: ".02em", padding: "18px 26px", borderRadius: 7, border: "1.5px solid rgba(255,255,255,.5)" }}>
-            Correo <span>advalgloballogistics@gmail.com</span>
+          <a href="mailto:ventas@advaluro.com" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: "color-mix(in srgb, var(--fondo) 18%, transparent)", color: "var(--titular)", textDecoration: "none", fontWeight: 500, fontSize: 15, letterSpacing: ".02em", padding: "18px 26px", borderRadius: 7, border: "1.5px solid rgba(255,255,255,.5)" }}>
+            Correo <span>ventas@advaluro.com</span>
           </a>
         </Reveal>
       </div>

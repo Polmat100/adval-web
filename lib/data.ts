@@ -4,7 +4,7 @@ export const TEL = "tel:+51977557275";
 
 // FormSubmit: tras activar el correo, reemplazar el email por el alias aleatorio
 // que envía FormSubmit (ej. "https://formsubmit.co/ajax/8f3ka92xb...")
-export const COTIZACION_ENDPOINT = "https://formsubmit.co/ajax/advalgloballogistics@gmail.com";
+export const COTIZACION_ENDPOINT = "https://formsubmit.co/ajax/ventas@advaluro.com";
 
 export interface Carga { n: string; t: string; d: string; }
 export interface Razon { n: string; t: string; d: string; }
